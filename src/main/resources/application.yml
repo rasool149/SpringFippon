@@ -1,0 +1,63 @@
+## Default configuration (common to all environments)
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: fippon_project  # Optional: Replace with your application's name
+#
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: Rs@3779030
+#    url: jdbc:mysql://localhost:3306/fipponapp
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    show-sql: true
+#
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: dev
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/dev_database
+#    username: dev_username
+#    password: dev_password
+#  jpa:
+#    properties:
+#      hibernate:
+#        ddl-auto: update
+#
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: qa
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/qa_database
+#    username: qa_username
+#    password: qa_password
+#  jpa:
+#    properties:
+#      hibernate:
+#        ddl-auto: validate
+#
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: prod
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/prod_database
+#    username: prod_username
+#    password: prod_password
+#  jpa:
+#    properties:
+#      hibernate:
+#        ddl-auto: none
